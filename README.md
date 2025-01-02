@@ -54,23 +54,6 @@ pip install -r requirements.txt
 
 ---
 
-## Project Structure
-```
-.
-|-- data/                      # Directory for storing financial time series data.
-|-- models/                    # Directory for saving trained models.
-|-- notebooks/                 # Jupyter notebooks for exploratory analysis.
-|-- src/                       # Source code.
-    |-- preprocessing.py       # Data preparation and feature engineering.
-    |-- model.py               # TFT model implementation.
-    |-- strategy.py            # Trading strategy class.
-    |-- backtest.py            # Backtesting engine.
-|-- README.md                  # Project documentation.
-|-- requirements.txt           # Dependencies.
-|-- main.py                    # Entry point for running backtests.
-```
-
----
 
 ## Usage
 ### 1. Data Preparation
@@ -108,54 +91,7 @@ Analyze the backtest results using the provided visualization functions. This in
 
 ---
 
-## Results (Experimental)
-### Backtest Summary
-| Metric          | Value         |
-|-----------------|---------------|
-| Total Trades    | 1120          |
-| Win Rate        | 40.36%        |
-| Total PnL       | $-772,490.00  |
-| Avg Trade PnL   | $-689.72      |
-| Sharpe Ratio    | -1.046        |
-| Max Drawdown    | 2851.94%      |
 
-The results indicate the need for further optimization in:
-- Feature engineering
-- Trading strategy filters
-- Model architecture adjustments
-
-### Visualizations
-- **Cumulative PnL Over Time**
-- **Trade PnL Distribution**
-- **Feature Importance**
-- **Attention Patterns**
-
----
-
-## Limitations
-- **Data Quality**: Ensure data is cleaned and free of anomalies.
-- **Overfitting**: Use proper cross-validation to avoid overfitting during model training.
-- **Risk Management**: The trading strategy should be tuned to account for realistic market conditions and slippage.
-
----
-
-## Future Work
-- Incorporate alternative forecasting models like LSTMs and Transformers.
-- Experiment with different feature sets and lag structures.
-- Develop more sophisticated risk management techniques.
-- Optimize for strong signal thresholds and reduce false positives.
-
----
-
-## Contributions
-Feel free to fork this repository and submit pull requests for improvements. For any issues or suggestions, please open a GitHub issue.
-
----
-
-## License
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
----
 
 ## Acknowledgments
 - [PyTorch](https://pytorch.org/)
